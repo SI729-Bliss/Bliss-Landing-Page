@@ -44,6 +44,42 @@
     </div>
     
   </section>
+  <!-- contact -->
+   <section id="contact" class="h-[100vh] w-full bg-gradient-to-b to-[#cde3ff] from-[#ffdbdb] flex justify-center items-center flex-col gap-8 px-12">
+    <div class="max-w-md w-full bg-white p-8 shadow-lg rounded-lg">
+      <h2 class=" text-[14px] sm:text-2xl font-bold mb-4 text-black">Contact</h2>
+      <form class="space-y-4 flex flex-col ">
+          <label for="name" class="  text-black text-xs sm:font-medium">Nombre</label>
+          <input type="text" id="name" name="name" required
+            class="w-full border border-gray-300 rounded-md py-2 mb-2 focus:outline-none focus:ring-2 focus:ring-[#f8a7a7]">
+        
+        <div>
+          <label for="email" class="block text-black text-xs sm:font-medium mb-2">Correo Electrónico</label>
+          <input type="email" id="email" name="email" required
+            class="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-[#f8a7a7]">
+        </div>
+        
+        <div>
+          <label for="subject" class="block text-black text-xs sm:font-medium mb-2">Asunto</label>
+          <input type="text" id="subject" name="subject" required
+            class="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-[#f8a7a7]">
+        </div>
+        
+        <div>
+          <label for="message" class="block text-black text-xs sm:font-medium mb-2">Mensaje</label>
+          <textarea id="message" name="message" rows="4" required
+            class="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-[#f8a7a7]"></textarea>
+        </div>
+        
+        <div>
+          <button type="submit"
+            class="w-full bg-[#8EBEF7] text-white text-xs sm:font-medium py-2 rounded-md hover:bg-[#f8a7a7] ">
+            Enviar
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
 
   
   <!-- pricing -->
