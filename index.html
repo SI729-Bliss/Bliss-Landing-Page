@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <title>BLISS</title>
-  <title>BLISS</title>
     <!-- links -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -20,8 +19,9 @@
         BLISS
       </div>
       <ul class=" list-none w-1/2 flex flex-row items-center justify-around  px-10 gap-5">
+        <li class="text-black  hover:text-red-300 bg-gradient-to-r from-[#F88888] to-[#8EBEF7] bg-clip-text text-transparent"><a href="#product">About the Product</a></li>
         <li class="text-black  hover:text-red-300 bg-gradient-to-r from-[#F88888] to-[#8EBEF7] bg-clip-text text-transparent"><a href="#features">Features</a></li>
-        <li class="text-black  hover:text-red-300 bg-gradient-to-r from-[#F88888] to-[#8EBEF7] bg-clip-text text-transparent"><a href="#vision">Our Vision</a></li>
+        <li class="text-black  hover:text-red-300 bg-gradient-to-r from-[#F88888] to-[#8EBEF7] bg-clip-text text-transparent"><a href="#vision">About us</a></li>
         <li class="text-black  hover:text-red-300 bg-gradient-to-r from-[#F88888] to-[#8EBEF7] bg-clip-text text-transparent"><a href="#team">Team</a></li>
         <li class="text-black  hover:text-red-300 bg-gradient-to-r from-[#F88888] to-[#8EBEF7] bg-clip-text text-transparent"><a href="#contact">Contact</a></li>
         <li class="text-black  hover:text-red-300 bg-gradient-to-r from-[#F88888] to-[#8EBEF7] bg-clip-text text-transparent"><a href="#pricing">Pricing</a></li>
@@ -41,7 +41,7 @@
       <div class="absolute inset-0 flex flex-col w-[50%]  items-start justify-center px-20 gap-8">
         <h1 class="flex text-white text-xl text-start font-bold sm:text-4xl md:text-6xl sm:font-semibold ">EXPERIENCE THE ART OF BEAUTY</h1>
         <p class="text-white font-light sm:text-2xl">Elige, agenda y personaliza tu servicio de cuidado o belleza en un solo lugar.</p>
-        <button class="bg-white rounded-full py-1 sm:py-2 px-8 sm:px-14 md:px-24 opacity-100 text-white flex  justify-center w-10 sm:w-24 md:w-36 text-[12px] sm:text-xl md:text-2xl bg-gradient-to-b to-[#8EBEF7] from-[#F88888]  hover:ease-in-out hover:duration-300 hover:bg-gradient-to-b hover:from-[#8EBEF7]  hover:to-[#F88888] hover:text-3xl whitespace-nowrap ">START NOW!</button>
+        <button class="bg-white rounded-full py-1 sm:py-2 px-8 sm:px-14 md:px-24 opacity-100 text-white flex  justify-center w-10 sm:w-24 md:w-36 text-[12px] sm:text-xl md:text-2xl bg-gradient-to-b to-[#8EBEF7] from-[#F88888]  hover:ease-in-out hover:duration-300 hover:bg-gradient-to-b hover:from-[#8EBEF7]  hover:to-[#F88888] hover:text-3xl whitespace-nowrap ">Beauty Now!</button>
       </div>
       
     </div>
@@ -62,7 +62,27 @@
 
 
   </section>
-
+  <!-- About the product -->
+  <section id="product"  class="py-12 bg-gradient-to-b from-blue-50 to-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-8">
+        <h2 class="text-4xl font-bold text-[#37123C] font-semibold ">About the product</h2>
+      </div>
+      <div class="text-center mb-8 max-w-3xl mx-auto">
+        <p class="text-lg text-gray-600 font-light">
+          Bliss is a web and mobile application that allows you to schedule and customize your beauty and personal care services in one place. Designed to enhance the quality of service and management of centers offering beauty and personal care services.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="flex justify-center">
+          <img class="rounded-lg shadow-lg transition duration-300 hover:scale-105" src="assets/images/gallery/sswebapp1.JPG" alt="Web App Screenshot"/>
+        </div>
+        <div class="flex justify-center">
+          <img class="rounded-lg shadow-lg transition duration-300 hover:scale-105" src="assets/images/gallery/ssmobile1.JPG" alt="Mobile App Screenshot"/>
+        </div>
+      </div>
+    </div>
+  </section>
   
   <!-- Features  -->
   <section id="features" class=" bg-white  w-full flex justify-center items-center flex-col gap-24 px-12 pb-10 pt-5">
@@ -98,21 +118,42 @@
 
   </section>
 
-  <!-- Our Vision  -->
-  <section id="vision" class=" h-auto py-10 md:h-[80vh] w-full bg-[#ffdbdb]  flex justify-center items-center flex-col  md:flex-row gap-5 md:gap-16  px-2 md:px-20">
-    <div class=" flex self-center items-center justify-center text-center  h-auto w-[40%]  rounded-md"> 
-      <img src="assets/images/gallery/vision.png"  class=" w-auto h-auto shadow-lg shadow-black-900" alt="A stylist washing her client's hair.">
-    </div>
-    <div class="flex w-[50%] md:p-5 flex-col gap-6 md:px-20">
-      <h2 class=" text-[#37123C] font-bold text-center md:text-start text-xl md:text-3xl">
-        Our vision
+
+<!-- Misión y Visión -->
+<section id="mision-vision" class="h-auto py-10 w-full bg-[#ffdbdb] flex justify-center items-center flex-col md:flex-row gap-5 md:gap-16 px-4 md:px-20">
+  
+  <!-- Imagen -->
+  <div class="flex self-center items-center justify-center text-center w-[40%] h-auto rounded-md">
+    <img src="assets/images/gallery/vision.png" class="w-auto h-auto shadow-lg shadow-black-900" alt="A stylist washing her client's hair.">
+  </div>
+
+  <!-- Contenido Misión y Visión -->
+  <div class="flex flex-col gap-8 w-[50%] md:p-5 md:px-20">
+    <!-- Misión -->
+    <div class="flex flex-col gap-4">
+      <h2 class="text-[#37123C] font-bold text-center md:text-start text-xl md:text-3xl">
+        Our Mission
       </h2>
-      <h3 class=" text-[18px] md:text-3xl text-[#d8387b] text-center ">
-        "Enhancing the quality of service and management of centers offering beauty and personal care services"
-      </h3>
+      <h4 class="text-[18px] md:text-3xl text-[#d8387b] text-center md:text-start">
+        "Delivering personalized beauty and personal care services that exceed customer expectations, while empowering service providers through seamless management solutions."
+      </h4>
     </div>
-    
-  </section>
+
+    <!-- Visión -->
+    <div class="flex flex-col gap-4">
+      <h2 class="text-[#37123C] font-bold text-center md:text-start text-xl md:text-3xl">
+        Our Vision
+      </h2>
+      <h4 class="text-[18px] md:text-3xl text-[#d8387b] text-center md:text-start">
+        "Enhancing the quality of service and management of centers offering beauty and personal care services."
+      </h4>
+    </div>
+  </div>
+
+</section>
+
+
+
   
     <!-- developers  -->
 
