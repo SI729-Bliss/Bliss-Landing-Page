@@ -1,0 +1,7 @@
+#home{
+    height: 90vh;
+    background: url('assets/hero.svg') no-repeat center center/cover; 
+}
+#logox{
+    font-size: 4rem;
+}
