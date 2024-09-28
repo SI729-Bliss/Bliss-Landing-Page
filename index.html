@@ -8,17 +8,19 @@
   <!--Google Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!--Tajawal-->
+  <!--Tajawal-->
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
-    <!--Montserrat-->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
-  
+  <!--Montserrat-->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+  <!--Styles-->
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body class="font-[Tajawal] bg-white">
   <section id="navs">
     <nav class="bg-white">
       <div class="max-w-screen flex flex-wrap items-center justify-between mx-auto p-4">
-        <span class="flex items-center text-xl sm:text-3xl font-semibold text-[#37123C] space-x-reverse">BLISS</span>
+        <span id="logox" class="ml-5 flex items-center text-xl sm:text-3xl font-light text-[#37123C] space-x-reverse">BLISS</span>
         <button 
         onclick="toggleMenu()"
         type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" 
@@ -53,41 +55,16 @@
         button.setAttribute('aria-expanded', !isOpen);
       }
     </script>
-    <!--
-    <div class="flex items-center space-x-3 rtl:space-x-reverse">
-      <span class="text-xl sm:text-3xl font-semibold text-[#37123C]">BLISS</span>
-    </div>
-
-        <nav id="header_nav" class="bg-white h-20 w-full flex flex-col sticky top-0 z-50">
-          <div id="navbar" class="w-full md:block md:w-auto hidden">
-            <ul class=" font-medium flex flex-col p-4 md:p-0 bg-white sm:mt-4 md:mt-0 md:bg-opacity-0 rounded-lg md:flex-row md:space-x-8 font-[Montserrat]">
-              <li class="text-black  hover:text-red-300 bg-gradient-to-r from-[#F88888] to-[#8EBEF7] bg-clip-text text-transparent"><a href="#product">About the Product</a></li>
-              <li class="text-black  hover:text-red-300 bg-gradient-to-r from-[#F88888] to-[#8EBEF7] bg-clip-text text-transparent"><a href="#features">Features</a></li>
-              <li class="text-black  hover:text-red-300 bg-gradient-to-r from-[#F88888] to-[#8EBEF7] bg-clip-text text-transparent"><a href="#vision">About us</a></li>
-              <li class="text-black  hover:text-red-300 bg-gradient-to-r from-[#F88888] to-[#8EBEF7] bg-clip-text text-transparent"><a href="#team">Team</a></li>
-              <li class="text-black  hover:text-red-300 bg-gradient-to-r from-[#F88888] to-[#8EBEF7] bg-clip-text text-transparent"><a href="#contact">Contact</a></li>
-              <li class="text-black  hover:text-red-300 bg-gradient-to-r from-[#F88888] to-[#8EBEF7] bg-clip-text text-transparent"><a href="#pricing">Pricing</a></li>
-            </ul>
-          </div>
-        </nav>
-    -->
   </section>
 
   <!-- home  -->
-  <section id="home" class="h-[89vh] w-full bg-[#CFDCD3] flex justify-center items-center flex-col gap-16">
-
-
-    <div class="relative w-full h-full">
-      <!-- Imagen -->
-      <img src="assets/hero.svg" alt="Imagen" class="w-full h-full object-cover">
-    
+  <section id="home" class="flex items-center h-full flex-row px-8 md:pl-20">
       <!-- Texto encima de la imagen -->
-      <div class="absolute inset-0 flex flex-col w-[50%]  items-start justify-center px-20 gap-8">
-        <h1 class="flex text-white text-xl text-start font-bold sm:text-4xl md:text-6xl sm:font-semibold ">EXPERIENCE THE ART OF BEAUTY</h1>
-        <p class="text-white font-light sm:text-2xl">Elige, agenda y personaliza tu servicio de cuidado o belleza en un solo lugar.</p>
-        <button class="bg-white rounded-full py-1 sm:py-2 px-8 sm:px-14 md:px-24 opacity-100 text-white flex  justify-center w-10 sm:w-24 md:w-36 text-[12px] sm:text-xl md:text-2xl bg-gradient-to-b to-[#8EBEF7] from-[#F88888]  hover:ease-in-out hover:duration-300 hover:bg-gradient-to-b hover:from-[#8EBEF7]  hover:to-[#F88888] hover:text-3xl whitespace-nowrap ">Beauty Now!</button>
-      </div>
-      
+      <div class="flex flex-col items-start w-[500px] p-4 rounded-lg bg-black/60 lg:bg-black/0">
+        <h1 class="flex text-4xl md:text-5xl lg:text-6xl text-start font-bold  text-black bg-gradient-to-r from-[#F88888] to-[#8EBEF7] bg-clip-text text-transparent">EXPERIENCE THE ART OF BEAUTY</h1>
+        <p id="hero-sub-title" class="text-white  sm:text-2xl pt-2 pb-8">Choose, schedule, and customize your beauty or personal care service all in one place.</p>
+        <button class="bg-white border-2 border-white rounded-lg py-1 sm:py-2 px-8 sm:px-14 md:px-24 opacity-100 text-white flex  justify-center w-10 sm:w-24 md:w-36 text-[12px] sm:text-xl md:text-2xl bg-gradient-to-b to-[#8EBEF7] from-[#F88888]  hover:ease-in-out hover:duration-300 hover:bg-gradient-to-b hover:from-[#8EBEF7]  hover:to-[#F88888] hover:text-3xl whitespace-nowrap ">Beauty Now!</button>
+
     </div>
 
   </section>
