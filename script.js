@@ -1,4 +1,4 @@
-function toggleMenu() {
+function script() {
     const menu = document.getElementById('navbar-default');
     menu.classList.toggle('hidden');
 
