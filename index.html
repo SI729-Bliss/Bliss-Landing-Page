@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="toggleMenu.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
   <title>BLISS</title>
   <!--Google Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,17 +46,7 @@
         </div>
       </div>
     </nav>
-    <script>
-      function toggleMenu() {
-        const menu = document.getElementById('navbar-default');
-        menu.classList.toggle('hidden');
-    
-        // Actualiza el atributo aria-expanded
-        const button = document.getElementById('menu-button');
-        const isOpen = menu.classList.contains('hidden');
-        button.setAttribute('aria-expanded', !isOpen);
-      }
-    </script>
+
   </section>
 
   <!-- home  -->
@@ -88,7 +80,7 @@
 
   <!-- About the product -->
   <section id="product"  class="py-12 bg-white">
-    <div class="container mx-auto px-4">
+    <div class="container mx-auto px-4 ">
       <div class="text-center mb-8">
         <h2 class="text-4xl font-bold text-[#37123C] font-semibold ">About the product</h2>
       </div>
@@ -97,13 +89,25 @@
           Bliss is a web and mobile application that allows you to schedule and customize your beauty and personal care services in one place. Designed to enhance the quality of service and management of centers offering beauty and personal care services.
         </p>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div class="flex justify-center">
-          <img class="rounded-lg shadow-lg transition duration-300 hover:scale-105" src="assets/images/gallery/sswebapp1.JPG" alt="Web App Screenshot"/>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w">
+        <div class="flex flex-row gap-10">
+            <div class="flex ">
+                <img class="rounded-lg shadow-lg transition duration-300 hover:scale-105" src="assets/images/gallery/sswebapp1.JPG" alt="Web App Screenshot"/>
+            </div>
+            <div class="flex ">
+                <img class="rounded-3xl shadow-lg transition duration-300 hover:scale-105" src="assets/images/gallery/ssmobile1.JPG" alt="Mobile App Screenshot"/>
+            </div>
         </div>
-        <div class="flex justify-center">
-          <img class="rounded-3xl shadow-lg transition duration-300 hover:scale-105" src="assets/images/gallery/ssmobile1.JPG" alt="Mobile App Screenshot"/>
-        </div>
+          <div class="flex justify-center items-center">
+              <iframe class="transition transform hover:scale-105 shadow-lg hover:shadow-2xl rounded-lg"
+                      width="700" height="394"
+                      src="https://www.youtube.com/embed/WspllCzDj9M"
+                      title="YouTube video player" frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen>
+              </iframe>
+          </div>
+
       </div>
     </div>
   </section>
